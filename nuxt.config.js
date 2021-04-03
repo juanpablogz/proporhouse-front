@@ -42,7 +42,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: process.env.NODE_ENV !== 'production' ? 'http://127.0.0.1:3000/api/v1/' : 'http://hostapp.com'
+    baseURL: process.env.NODE_ENV !== 'production' ? 'http://127.0.0.1:3000/api/v1/' : 'https://rails-api-base-v1.herokuapp.com/api/v1/'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
