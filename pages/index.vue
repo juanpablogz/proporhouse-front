@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <Online />
-    <SignIn />
-    <SignUp />
+    <button @click.prevent="goToPage('signIn')">Iniciar sesión</button>
+    <button @click.prevent="goToPage('signUp')">Registrarme</button>
   </div>
 </template>
 
@@ -14,6 +14,11 @@ export default {
   components: {
     SignIn,
     SignUp
+  },
+  methods: {
+    goToPage(page) {
+     this.$router.push(`/${page}`)
+    }
   }
 }
 </script>
